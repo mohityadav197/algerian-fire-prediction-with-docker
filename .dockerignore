@@ -1,0 +1,23 @@
+# Ignore the virtual environment (this is the biggest one!)
+.venv/
+venv/
+env/
+
+# Ignore Python cache files
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore local Git history (GitHub has the cloud version)
+.git/
+.gitignore
+
+# Ignore VS Code specific settings
+.vscode/
+
+# Ignore the raw datasets if they are huge (your .pkl files have the "brain")
+data/*.csv
+<!-- 
+##Why this is a "Smart" move
+By using a correctly named .dockerignore file, you ensure that only the "soul" of your project (the Flask code and the trained Ridge model) gets into the container. This makes your Docker image build in seconds rather than minutes—something an MLOps engineer would always do in a real job. -->
